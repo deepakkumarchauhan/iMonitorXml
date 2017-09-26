@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16F73" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="TBL_Device" representedClassName="TBL_DeviceMO" syncable="YES" codeGenerationType="class">
+        <attribute name="armstatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="batteryLevel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="device_position" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceConfig" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enableStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idDevice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="left" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="levelStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lIcon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mac_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modelNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="top" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TBL_Gateway" representedClassName="TBL_GatewayMO" syncable="YES" codeGenerationType="class">
+        <attribute name="all_on_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="customer_password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gateway_mode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gateway_status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="local_ip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mac_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="gatewayToDevice" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="TBL_Device" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TBL_Device" positionX="3420" positionY="476" width="128" height="298"/>
+        <element name="TBL_Gateway" positionX="3265" positionY="432" width="128" height="178"/>
+    </elements>
+</model>
